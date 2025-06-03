@@ -1,0 +1,8 @@
+version: '3'
+services:
+  webphp:
+    image: php:8.2-apache
+    ports:
+      - 8080:80 #expone le puerto 8080
+    volumes:
+      - ./src:/var/www/html #ruta donde guarda la web apache asociado con mi carpeta src
